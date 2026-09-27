@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kay's Recipe Sorter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kay's Recipe Sorter</h1>
+        <div class="content">
+            <div class="filters">
+                <h2>Type</h2>
+                <div class="category-checkboxes">
+                    <label><input type="checkbox" class="category" value="Drinks"> Drinks</label>
+                    <label><input type="checkbox" class="category" value="Appetizers"> Appetizers</label>
+                    <label><input type="checkbox" class="category" value="Sides"> Sides</label>
+                    <label><input type="checkbox" class="category" value="Salads"> Salads</label>
+                    <label><input type="checkbox" class="category" value="Snacks"> Snacks</label>
+                    <label><input type="checkbox" class="category" value="Breakfast"> Breakfast</label>
+                    <label><input type="checkbox" class="category" value="Lunch/Dinner"> Lunch/Dinner</label>
+                    <label><input type="checkbox" class="category" value="Desserts"> Desserts</label>
+                    <label><input type="checkbox" class="category" value="Sauces/Dips/Spreads"> Sauces/Dips/Spreads</label>
+                </div>
+                <h2>Macros</h2>
+                <div class="category-checkboxes">
+                    <label><input type="checkbox" class="category" value="Low calorie"> Low calorie</label>
+                    <label><input type="checkbox" class="category" value="High volume"> High volume</label>
+                    <label><input type="checkbox" class="category" value="High protein"> High protein</label>
+                    <label><input type="checkbox" class="category" value="Low fat"> Low fat</label>
+                    <label><input type="checkbox" class="category" value="Low carb"> Low carb</label>
+                    <label><input type="checkbox" class="category" value="Low sugar"> Low sugar</label>
+                </div>
+                <h2>Equipment</h2>
+                <div class="category-checkboxes">
+                    <label><input type="checkbox" class="category" value="Air fryer"> Air fryer</label>
+                    <label><input type="checkbox" class="category" value="Baked"> Oven</label>
+                    <label><input type="checkbox" class="category" value="Stove"> Stove</label>
+                    <label><input type="checkbox" class="category" value="Grill"> Grill</label>
+                     <label><input type="checkbox" class="category" value="Microwave"> Microwave</label>
+                     <label><input type="checkbox" class="category" value="Blender"> Blender/mixer</label>
+                    <label><input type="checkbox" class="category" value="No bake/cook"> No bake/cook</label>
+                </div>
+                <h2>Ingredients</h2>
+                <div class="category-checkboxes">
+                    <label><input type="checkbox" class="category" value="Healthy swaps"> Healthy recipe/swaps</label>
+                    <label><input type="checkbox" class="category" value="Vegetarian"> Vegetarian</label>
+                    <label><input type="checkbox" class="category" value="Vegan"> Vegan</label>
+                    <label><input type="checkbox" class="category" value="Less than 10 ingredients"> Less than 10 ingredients</label>
+                    <label><input type="checkbox" class="category" value="Fruit"> Fruit</label>
+                    <label><input type="checkbox" class="category" value="Vegetable"> Vegetable</label>
+                    <label><input type="checkbox" class="category" value="Potato"> Potato</label>
+                    <label><input type="checkbox" class="category" value="Rice/grain"> Rice/grain</label>
+                    <label><input type="checkbox" class="category" value="Bread/wrapper"> Bread/wrapper</label>
+                    <label><input type="checkbox" class="category" value="Dough"> Dough</label>
+                    <label><input type="checkbox" class="category" value="Pasta"> Pasta</label>
+                    <label><input type="checkbox" class="category" value="Oats"> Oats</label>
+                    <label><input type="checkbox" class="category" value="Nuts/seeds"> Nuts/seeds</label>
+                    <label><input type="checkbox" class="category" value="Beans"> Beans</label>
+                    <label><input type="checkbox" class="category" value="Meat"> Meat</label>
+                    <label><input type="checkbox" class="category" value="Fish"> Fish</label>
+                    <label><input type="checkbox" class="category" value="Protein powder"> Protein powder</label>
+                    <label><input type="checkbox" class="category" value="Cheese"> Cheese</label>
+                    <label><input type="checkbox" class="category" value="Dairy"> Dairy</label>
+                    <label><input type="checkbox" class="category" value="Egg"> Egg</label>
+                    <label><input type="checkbox" class="category" value="Sugar"> Sugar</label>
+                    <label><input type="checkbox" class="category" value="Honey/sweetener"> Honey/sweetener</label>
+                    <label><input type="checkbox" class="category" value="Chocolate"> Chocolate</label>
+                </div>
+                <h2>Cuisine</h2>
+                <div class="category-checkboxes">
+                    <label><input type="checkbox" class="category" value="Asian"> Asian</label>
+                    <label><input type="checkbox" class="category" value="American"> American</label>
+                    <label><input type="checkbox" class="category" value="Hispanic"> Hispanic</label>
+                    <label><input type="checkbox" class="category" value="Italian"> Italian</label>
+                    <label><input type="checkbox" class="category" value="Southern"> Southern</label>
+                    <label><input type="checkbox" class="category" value="Middle Eastern"> Middle Eastern</label>
+                </div>
+                <h2>Extra</h2>
+                <div class="category-checkboxes">
+                    <label><input type="checkbox" class="category" value="Meal prep"> Meal prep</label>
+
+                    <label><input type="checkbox" class="category" value="Big batch"> Big batch</label>
+                    <label><input type="checkbox" class="category" value="Dupe/homemade"> Dupe/homemade</label>
+                    <label><input type="checkbox" class="category" value="Single-serve"> Single-serve</label>
+                    <label><input type="checkbox" class="category" value="Cheap"> Cheap</label>
+                    <label><input type="checkbox" class="category" value="Easy"> Easy</label>
+                    <label><input type="checkbox" class="category" value="Quick"> Quick</label>
+                    <label><input type="checkbox" class="category" value="Fancy"> Fancy</label>
+                </div>
+                <button id="filter-recipes">Filter Recipes</button>
+            </div>
+            <div class="recipe-column">
+                <h2>Recipes</h2>
+                <div id="recipe-container"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
